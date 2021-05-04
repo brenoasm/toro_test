@@ -33,7 +33,7 @@ class _SplashPageState extends State<SplashPage>
   void _onAnimationCompleted() async {
     await Future.delayed(Duration(seconds: 2));
 
-    Navigator.of(context).pushNamed(Routes.login);
+    Navigator.of(context).pushReplacementNamed(Routes.onboard);
   }
 
   @override
@@ -58,13 +58,11 @@ class _SplashPageState extends State<SplashPage>
       child: Stack(
         alignment: Alignment.center,
         children: [
-          Hero(
-            tag: logoIconPath,
-            child: Image.asset(
-              logoIconPath,
-              height: imageHeight,
-              width: imageWidth,
-            ),
+          Image.asset(
+            logoIconPath,
+            key: Key('logo'),
+            height: imageHeight,
+            width: imageWidth,
           ),
           AnimatedBuilder(
             animation: _animationController,
