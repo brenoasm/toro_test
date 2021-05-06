@@ -8,7 +8,7 @@ class ValidatorComposite implements Validation {
   ValidatorComposite(this.validations);
 
   @override
-  String? validate({required String field, required String value}) {
+  String? validate({required String field, required String? value}) {
     String? error;
 
     for (final validation in validations.where((v) => v.field == field)) {

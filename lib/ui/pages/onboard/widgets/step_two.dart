@@ -27,7 +27,7 @@ class StepTwo extends StatelessWidget {
               vertical: 32,
             ),
             child: StepTitle(
-              text: 'Corretagem Zero',
+              text: onboardStepTwoTitle,
             ),
           ),
           Padding(
@@ -37,7 +37,7 @@ class StepTwo extends StatelessWidget {
             child: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
-                text: 'Aproveite para investir com ',
+                text: onboardStepTwoDescriptionOne,
                 style: TextStyle(
                   color: Colors.grey.shade600,
                   fontSize: 24,
@@ -45,13 +45,13 @@ class StepTwo extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: 'Corretagem Zero em qualquer tipo de ativo, ',
+                    text: onboardStepTwoDescriptionTwo,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   TextSpan(
-                    text: 'inclusive de Bolsa.',
+                    text: onboardStepTwoDescriptionThree,
                   ),
                 ],
               ),

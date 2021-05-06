@@ -88,10 +88,7 @@ void main() {
 
     expectLater(
       sut.usernameErrorStream,
-      emitsInOrder([
-        null,
-        'E-mail ou CPF inválido',
-      ]),
+      emits('E-mail ou CPF inválido'),
     );
 
     expectLater(
@@ -117,10 +114,7 @@ void main() {
 
     expectLater(
       sut.passwordErrorStream,
-      emitsInOrder([
-        null,
-        'Campo requirido',
-      ]),
+      emits('Campo requirido'),
     );
 
     expectLater(
@@ -134,10 +128,7 @@ void main() {
   test('should emit isFormValid true', () async {
     expectLater(
       sut.isFormValidStream,
-      emitsInOrder([
-        false,
-        true,
-      ]),
+      emits(true),
     );
 
     sut.onPasswordChanged(faker.lorem.word());
@@ -175,12 +166,12 @@ void main() {
 
     expectLater(
       sut.isLoadingStream,
-      emitsInOrder([true, false]),
+      emits(false),
     );
 
     expectLater(
       sut.mainErrorStream,
-      emitsInOrder([null, 'Credenciais inválidas']),
+      emits('Credenciais inválidas'),
     );
 
     await sut.signIn();

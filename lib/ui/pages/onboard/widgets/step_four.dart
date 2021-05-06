@@ -28,7 +28,7 @@ class StepFour extends StatelessWidget {
               vertical: 32,
             ),
             child: StepTitle(
-              text: 'E tem muito mais!',
+              text: onboardStepFourTitle,
             ),
           ),
           ListView(
@@ -39,13 +39,13 @@ class StepFour extends StatelessWidget {
             ),
             children: [
               CheckItemTile(
-                text: 'Recomendações de investimentos.',
+                text: investmentRecommendations,
               ),
               CheckItemTile(
-                text: 'Curso de iniciante ao avançado.',
+                text: beginnersCourses,
               ),
               CheckItemTile(
-                text: 'Invista sabendo quanto pode ganhar.',
+                text: investKnowingThings,
               ),
             ],
           )

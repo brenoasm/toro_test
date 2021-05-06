@@ -18,7 +18,8 @@ class DefaultElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final filledColor = Colors.cyan.shade600;
+    final enabled = onPressed != null;
+    final filledColor = enabled ? Colors.cyan.shade600 : Colors.grey.shade400;
 
     return SizedBox(
       width: width,

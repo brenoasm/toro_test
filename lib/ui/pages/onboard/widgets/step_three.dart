@@ -27,7 +27,7 @@ class StepThree extends StatelessWidget {
               vertical: 32,
             ),
             child: StepTitle(
-              text: 'Cashback em Fundos de Investimentos',
+              text: onboardStepThreeTitle,
             ),
           ),
           Padding(
@@ -37,7 +37,7 @@ class StepThree extends StatelessWidget {
             child: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
-                text: 'Receba parte da taxa de administração, ',
+                text: onboardStepThreeDescriptionOne,
                 style: TextStyle(
                   color: Colors.grey.shade600,
                   fontSize: 24,
@@ -45,7 +45,7 @@ class StepThree extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: 'em dinheiro, direto na sua conta Toro, ',
+                    text: onboardStepThreeDescriptionTwo,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),

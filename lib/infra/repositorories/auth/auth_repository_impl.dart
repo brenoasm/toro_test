@@ -11,7 +11,7 @@ class AuthRepositoryImpl implements AuthRepository {
     // Simulate a http call
     await Future.delayed(Duration(seconds: 2));
 
-    if (username != 'toro' || password != 'toro') {
+    if (username != '12345678909' || password != 'toro') {
       throw AuthError(error: 'Credenciais inválidas');
     }
   }

@@ -7,8 +7,8 @@ class RequiredValidator extends Equatable implements FieldValidation {
 
   RequiredValidator(this.field);
 
-  String? validate(String value) {
-    final isValid = value.isNotEmpty;
+  String? validate(String? value) {
+    final isValid = value?.isNotEmpty == true;
 
     return isValid ? null : 'Campo requirido';
   }
