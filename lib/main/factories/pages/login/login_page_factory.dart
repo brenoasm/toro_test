@@ -1,3 +1,7 @@
 import 'package:toro_test/ui/pages/pages.dart';
 
-LoginPage makeLoginPage() => LoginPage();
+import 'login_presenter_factory.dart';
+
+LoginPage makeLoginPage() => LoginPage(
+      presenter: makeLoginStreamPresenter(),
+    );

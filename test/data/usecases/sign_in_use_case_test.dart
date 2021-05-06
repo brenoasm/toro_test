@@ -32,7 +32,7 @@ void main() {
 
   void _mockAuthRepositoryError() {
     _mockAuthRepositoryCall().thenThrow(
-      AuthError(error: 'Invalid credentials'),
+      AuthError(error: 'Credenciais inválidas'),
     );
   }
 
@@ -73,7 +73,7 @@ void main() {
     expect(
       future,
       throwsA(
-        AuthError(error: 'Invalid credentials'),
+        AuthError(error: 'Credenciais inválidas'),
       ),
     );
   });

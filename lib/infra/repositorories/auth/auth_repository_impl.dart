@@ -12,7 +12,7 @@ class AuthRepositoryImpl implements AuthRepository {
     await Future.delayed(Duration(seconds: 2));
 
     if (username != 'toro' || password != 'toro') {
-      throw AuthError(error: 'Invalid credentials');
+      throw AuthError(error: 'Credenciais inválidas');
     }
   }
 }

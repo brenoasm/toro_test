@@ -17,7 +17,7 @@ void main() {
     expect(
       future,
       throwsA(
-        AuthError(error: 'Invalid credentials'),
+        AuthError(error: 'Credenciais inválidas'),
       ),
     );
   });
